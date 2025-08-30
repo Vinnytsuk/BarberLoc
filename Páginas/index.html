@@ -126,23 +126,14 @@
     .app-buttons img:hover { transform: scale(1.08); }
 
     /* FOOTER */
-   footer {
-    background-color: #1c1c1c;
-    padding: 50px 8%;
-    display: flex; /* troquei grid por flex */
-    flex-direction: column; /* coloca os elementos em coluna */
-    align-items: center; /* centraliza horizontalmente */
-    text-align: center; /* centraliza o texto */
-    gap: 20px;
-    border-top: 3px solid #e60000;
-}
-footer .copy {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #bbb;
-}
-
-    
+    footer {
+        background-color: #1c1c1c;
+        padding: 50px 8%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        border-top: 3px solid #e60000;
+    }
     footer h3 { color: #e60000; margin-bottom: 15px; }
     footer a {
         color: white; text-decoration: none;
